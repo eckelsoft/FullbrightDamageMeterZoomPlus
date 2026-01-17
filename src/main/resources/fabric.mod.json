@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "fullbrightdamagemeterzoomplus",
+  "version": "${version}",
+  "name": "FullbrightDamageMeterZoomPlus",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/fullbrightdamagemeterzoomplus/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "org.eckelsoft.fullbrightdamagemeterzoomplus.client.FullbrightdamagemeterzoomplusDataGenerator"
+    ],
+    "client": [
+      "org.eckelsoft.fullbrightdamagemeterzoomplus.client.FullbrightdamagemeterzoomplusClient"
+    ],
+    "main": [
+      "org.eckelsoft.fullbrightdamagemeterzoomplus.Fullbrightdamagemeterzoomplus"
+    ]
+  },
+  "mixins": [
+    "fullbrightdamagemeterzoomplus.mixins.json",
+    {
+      "config": "fullbrightdamagemeterzoomplus.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": ">=1.21.9 <=1.21.11"
+  }
+}
