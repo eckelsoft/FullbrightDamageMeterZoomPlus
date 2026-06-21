@@ -37,7 +37,6 @@ import java.util.Locale;
 import java.util.Objects;
 
 public class FullbrightdamagemeterzoomplusClient implements ClientModInitializer {
-    private static final double DEFAULT_ZOOM = 0.25D;
     private static final int DAMAGE_LABEL_LIFETIME = 40;
     private static final Identifier KEY_CATEGORY_ID = Identifier.fromNamespaceAndPath(Fullbrightdamagemeterzoomplus.MOD_ID, "main");
     private static final Identifier HUD_OVERLAY_ID = Identifier.fromNamespaceAndPath(Fullbrightdamagemeterzoomplus.MOD_ID, "overlay");
@@ -133,7 +132,7 @@ public class FullbrightdamagemeterzoomplusClient implements ClientModInitializer
 
         Fullbrightdamagemeterzoomplus.isZooming = keyZoom.isDown();
         if (!Fullbrightdamagemeterzoomplus.isZooming) {
-            Fullbrightdamagemeterzoomplus.zoomLevel = (float) DEFAULT_ZOOM;
+            Fullbrightdamagemeterzoomplus.resetZoom();
         }
 
         while (keyMobHp.consumeClick()) {
@@ -270,7 +269,7 @@ public class FullbrightdamagemeterzoomplusClient implements ClientModInitializer
 
     private void resetClientState() {
         Fullbrightdamagemeterzoomplus.isZooming = false;
-        Fullbrightdamagemeterzoomplus.zoomLevel = (float) DEFAULT_ZOOM;
+        Fullbrightdamagemeterzoomplus.resetZoom();
         Fullbrightdamagemeterzoomplus.mobHpMode = 0;
         Fullbrightdamagemeterzoomplus.damageMeterEnabled = false;
         Fullbrightdamagemeterzoomplus.fullbrightEnabled = false;

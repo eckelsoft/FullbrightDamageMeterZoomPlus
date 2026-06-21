@@ -4,7 +4,7 @@
   "package": "org.eckelsoft.fullbrightdamagemeterzoomplus.mixin.client",
   "compatibilityLevel": "JAVA_21",
   "client": [
-    "AbstractClientPlayerEntityMixin",
+    "CameraMixin",
     "EntityRendererMixin",
     "MouseMixin",
     "LightmapMixin",

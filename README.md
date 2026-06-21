@@ -2,7 +2,7 @@
 
 ![Minecraft Version](https://img.shields.io/badge/Minecraft-26.2-brightgreen)
 ![Loader](https://img.shields.io/badge/Loader-Fabric-blue)
-![Version](https://img.shields.io/badge/Release-1.6.0-orange)
+![Version](https://img.shields.io/badge/Release-1.6.1--pre.6-orange)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
 Fullbright DamageMeter Zoom Plus is a client-side Fabric mod for Minecraft 26.2.
@@ -21,8 +21,11 @@ It combines fullbright, zoom, mob health display, and damage meter features in o
 
 - Updated for Minecraft 26.2
 - Fullbright is restored with the new render pipeline
-- Zoom now supports stronger mouse wheel zoom-in
-- Version bumped to 1.6.0
+- Zoom now reacts directly to mouse wheel in both directions
+- Mouse movement keeps a usable feel even at maximum zoom
+- Zoom-out now continues past the default view instead of stopping early
+- Zoom now hooks into the camera FOV calculation for a much deeper possible zoom
+- Pre-release version bumped to 1.6.1-pre.6
 
 ## Installation
 
