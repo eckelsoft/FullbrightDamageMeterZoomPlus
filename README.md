@@ -1,47 +1,42 @@
-# 🌟 Fullbright DamageMeter Zoom Plus
+# Fullbright DamageMeter Zoom Plus
 
-![Minecraft Version](https://img.shields.io/badge/Minecraft-1.21.9-brightgreen)
-![Minecraft Version](https://img.shields.io/badge/Minecraft-1.21.10-brightgreen)
-![Minecraft Version](https://img.shields.io/badge/Minecraft-1.21.11-brightgreen)
-![Fabric API](https://img.shields.io/badge/Loader-Fabric-blue)
+![Minecraft Version](https://img.shields.io/badge/Minecraft-26.2-brightgreen)
+![Loader](https://img.shields.io/badge/Loader-Fabric-blue)
+![Version](https://img.shields.io/badge/Release-1.6.0-orange)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
-Enhance visibility, combat feedback and exploration. This mod combines essential tools into one seamless experience.
+Fullbright DamageMeter Zoom Plus is a client-side Fabric mod for Minecraft 26.2.
+It combines fullbright, zoom, mob health display, and damage meter features in one mod.
 
----
-
-## 🚀 Core Features
+## Features
 
 | Key | Function | Description |
-| :--- | :--- | :--- |
-| **B** | Fullbright | Toggles between normal lighting and 100% brightness. |
-| **C** | Zoom | Hold to zoom in (Scroll to adjust). |
-| **H** | Mob HP Mode | Cycles through: BossBar -> Labels -> Both -> Off. |
-| **J** | Damage Meter | Toggles the visibility of floating damage numbers. |
+| :-- | :-- | :-- |
+| B | Fullbright | Toggles the night-vision style fullbright effect on and off. |
+| C | Zoom | Hold to zoom in. Scroll the mouse wheel while zooming to go much further in or back out. |
+| H | Mob HP Mode | Cycles through BossBar, Labels, Both, and Off. |
+| J | Damage Meter | Toggles floating damage numbers. |
 
-### 💡 Fullbright (Gamma Power)
-Toggle maximum brightness with **B**. Never get lost in pitch-black caves again – no torches required.
+## Release Notes
 
-### 🔍 Zoom Precision
-Hold **C** to bring the world closer.
-* **Smooth Scrolling:** Use the mouse wheel while zooming to adjust the magnification level on the fly.
+- Updated for Minecraft 26.2
+- Fullbright is restored with the new render pipeline
+- Zoom now supports stronger mouse wheel zoom-in
+- Version bumped to 1.6.0
 
-### 📜 Dynamic Mob HP System
-Stay informed about your target's health. Toggle between four modes using the **H** key.
+## Installation
 
-### ⚔️ RPG Damage Meter
-Get precise feedback on every hit. The mod calculates damage based on weapon attributes, strength effects, and attack cooldown.
-* **Critical Indicators:** Critical hits are highlighted in **bold red** for maximum impact.
+1. Install Fabric Loader for Minecraft 26.2.
+2. Install Fabric API.
+3. Put the mod jar into the `mods` folder.
+4. Start the game and test the keys above.
 
----
+## Build
 
-## 🛠 Installation
+```bash
+./gradlew build
+```
 
-1. Install the **Fabric Loader**.
-2. Place the **Fabric API** jar into your `mods` folder.
-3. Download this mod and move the jar into the `mods` folder.
-4. Launch the game and dominate!
+## License
 
----
-
-*Developed with ❤️ by Eckelsoft*
+MIT
